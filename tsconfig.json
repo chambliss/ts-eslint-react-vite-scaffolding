@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    // allows imports of .js files
+    "allowJs": true,
+    // allows using `import React from 'react'` instead of `import * as React from 'react'`
+    "allowSyntheticDefaultImports": true,
+    // do type checking of .js files
+    "checkJs": true,
+    // fixes some weird edge cases around importing legacy JS modules
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    // controls how files with JSX should be emitted
+    // see https://www.typescriptlang.org/tsconfig#jsx
+    "jsx": "react",
+    // get type definitions for additional features
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "WebWorker"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    // Indicates you want to use a different build tool to emit JS files, like Vite.
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noErrorTruncation": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUncheckedIndexedAccess": true,
+    // allows type-checking of .json files
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    // 'strict' enables:
+    // alwaysStrict
+    // strictNullChecks
+    // strictBindCallApply
+    // strictFunctionTypes
+    // strictPropertyInitialization
+    // noImplicitAny
+    // noImplicitThis
+    // useUnknownInCatchVariables - have to type errors upon catching them
+    "strict": true,
+    "target": "ES2020",
+    // Default is that "all visible types" will be included in project - specifying "types" says "only these packages listed should be included in the global scope"
+    // See more here: https://www.typescriptlang.org/tsconfig#types
+    // "types": [
+    //   "vitest/globals"
+    // ],
+    // Other good things to know about
+    // `rootDirs` if you want to use multiple source directories but treat them as a single root
+    // sourcemap-related stuff, for mapping prod errors to source code
+    // generateCpuProfile, which can provide insight into why builds are slow
+    // explainFiles, which lists files that TypeScript is including in the project, as well as the reason for each
+    "explainFiles": true
+    // traceResolution, which describes the resolution process for each included file
+    // several other options that improve performance in very large projects
+  },
+  "include": [
+    "./src/**/*",
+    "./tests/**/*"
+  ]
+}
