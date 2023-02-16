@@ -10,7 +10,11 @@ DONE, but revisit whether I want to enforce single/double quotes or whether I'd 
 
 ### Set up Vite and Vite config
 
+
+
 ### Set up pnpm
+
+Seems to work with minimal config.
 
 ### Set up support for CSS Modules
 
