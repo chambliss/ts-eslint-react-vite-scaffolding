@@ -12,7 +12,7 @@
     "isolatedModules": true,
     // controls how files with JSX should be emitted
     // see https://www.typescriptlang.org/tsconfig#jsx
-    "jsx": "react",
+    "jsx": "react-jsx",
     // get type definitions for additional features
     "lib": [
       "DOM",
@@ -59,6 +59,7 @@
   },
   "include": [
     "./src/**/*",
-    "./tests/**/*"
-  ]
+    "./tests/**/*",
+  ],
+  "references": [{ "path": "./tsconfig.vite.json" }]
 }

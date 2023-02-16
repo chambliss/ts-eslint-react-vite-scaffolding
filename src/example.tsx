@@ -1,6 +1,5 @@
-import React from "react";
 
-export const Example = () => {
+function Example() {
   return (
     <div>
       <h1>Example</h1>
@@ -8,3 +7,5 @@ export const Example = () => {
     </div>
   );
 };
+
+export default Example;
