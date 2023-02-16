@@ -1,0 +1,6 @@
+build
+coverage
+
+# Already have editor formatter for JSON and YAML
+*.json
+*.yaml

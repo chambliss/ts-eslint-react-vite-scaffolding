@@ -4,9 +4,15 @@
 
 ## TODO
 
+### Set up prettier
+
+DONE, but revisit whether I want to enforce single/double quotes or whether I'd like to force wrap prose lines
+
 ### Set up Vite and Vite config
 
 ### Set up pnpm
+
+### Set up support for CSS Modules
 
 ### `package.json`
 
