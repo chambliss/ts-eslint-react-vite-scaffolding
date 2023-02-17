@@ -42,7 +42,7 @@ module.exports = {
   root: true,
   rules: {
     // allow inferred types for exported function parameters and return values
-    "@typescript-eslint/explicit-module-boundary-types": "off",
+    // "@typescript-eslint/explicit-module-boundary-types": "off",
     // warn user if they have included unnecessary type annotations for things that are already inferrable
     "@typescript-eslint/no-inferrable-types": "warn",
     "@typescript-eslint/no-unused-vars": "off", // handled by noUnsuedLocals in tsconfig
