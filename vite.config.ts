@@ -42,6 +42,27 @@ export default defineConfig({
   css: {
     modules: {
 
+    },
+    postcss: {
+      plugins: [
+        // NOTE: Container queries are provided by an npm package polyfill, not via 
+        // PostCSS here.
+
+        // polyfill for Subgrid (not available in modern browsers)
+        require("postcss-subgrid"),
+        // auto-optimize inline SVG 
+        require("postcss-svgo"),
+        // lets you use more semantic names for cubic-bezier functions (see easings.net)
+        require("postcss-easings"),
+        // autogenerate system-ui font stack
+        require("postcss-font-family-system-ui"),
+        // Plugin pack providing a bunch of CSSNext features
+        // See here https://cssdb.org/
+        require("postcss-preset-env")({
+          // TODO: more specific config goes here, if needed
+          // TODO ALSO: can probably remove the CQ polyfill pkg, test first 
+        }),
+      ]
     }
   },
   // NOTE: Other config options are available if, for example, we need to make changes 

@@ -11,20 +11,25 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@typescript-eslint/parser": "latest",
     "@vitejs/plugin-react": "latest",
     "eslint": "latest",
     "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest",
+    "postcss": "^8.4.21",
+    "postcss-preset-env": "^8.0.1",
     "prettier": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "sass": "^1.58.3",
     "typescript": "latest",
-    "@typescript-eslint/parser": "latest",
-    "vite": "^4.1.1"
+    "vite": "^4.1.1",
+    "vite-plugin-sass-dts": "^1.2.16"
   },
   "dependencies": {
+    "cqfill": "^0.6.1",
     "react": "latest",
     "react-dom": "latest",
     "vite": "^4.1.1"
